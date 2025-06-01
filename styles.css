@@ -33,7 +33,6 @@ nav a {
 
 .hero {
     padding: 2rem 0; /* 좌우 패딩 제거 */
-    text-align: center;
     background-color: #ffe4e1;
 }
 
@@ -41,7 +40,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
     gap: 2rem;
 }
 
@@ -49,6 +48,14 @@ nav a {
     margin-left: 0;
     padding-left: 0;
 }
+
+.hero-logo img {
+    height: 50px; /* 로고 세로 높이 조절 */
+    width: auto;  /* 가로 비율 자동 유지 */
+    display: block;
+    margin-left: 0; /* 왼쪽 끝에 딱 붙임 */
+}
+
 .hero-text {
     max-width: 600px;
 }
@@ -112,10 +119,4 @@ footer {
 
 .about-text p {
     margin-bottom: 1.5em;
-}
-.hero-logo img {
-    height: 50px;
-    width: auto;
-    display: block;
-    margin-left: 0;
 }
