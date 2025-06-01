@@ -50,8 +50,8 @@ nav a {
 }
 
 .hero-logo img {
-    height: 320px; /* 로고 세로 높이 조절 */
-    width: 1200px; 
+    height: 200px; /* 로고 세로 높이 조절 */
+    width: 900px; 
     display: block;
     margin-left: 0; /* 왼쪽 끝에 딱 붙임 */
 }
