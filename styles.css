@@ -58,10 +58,19 @@ nav a {
     flex-wrap: wrap;
     text-align: left;
 }
+.hero-logo {
+    margin-left: 0;    /* 좌측 붙임 */
+    text-align: left;  /* 왼쪽 정렬 유지 */
+    max-width: 300px;  /* 필요하면 최대 너비 제한 */
+    height: auto;      
+}
+
 .hero-logo img {
-    max-width: 150px;
-    height: auto;
+    height: 80px;      /* 원하는 세로 높이 */
+    width: auto;       /* 가로 비율 유지 */
     display: block;
+    margin-left: 0;    /* 좌측 붙임 */
+}
 }
 .hero-text {
     max-width: 600px;
