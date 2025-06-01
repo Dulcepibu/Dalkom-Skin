@@ -84,24 +84,3 @@ footer {
     text-decoration: none;  
     color: #333;           
 }
-.product-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 800px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.product-card img {
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover img {
-    transform: scale(1.1);
-}
