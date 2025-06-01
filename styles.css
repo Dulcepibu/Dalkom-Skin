@@ -70,3 +70,13 @@ footer {
     font-size: 2rem;
     margin-left: 1rem;
 }
+.about-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 1.5em;
+}
