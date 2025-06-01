@@ -5,32 +5,68 @@ body {
     background-color: #fff0f5;
     color: #333;
 }
+
 header {
     background-color: #ffb6c1;
     padding: 1rem;
     text-align: center;
 }
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+.logo {
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+}
+.logo a {
+    text-decoration: none;
+    color: #333;
+}
+.logo-img {
+    height: 50px;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin: 0;
 }
 nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
+/* Hero Section */
 .hero {
     padding: 2rem;
-    text-align: center;
     background-color: #ffe4e1;
 }
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.hero-logo img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+.hero-text {
+    max-width: 600px;
+}
+
 .products {
     padding: 2rem;
     text-align: center;
@@ -51,63 +87,20 @@ nav a {
 .product-card h4 {
     font-size: 1rem;
 }
+
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #ffb6c1;
     color: white;
 }
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
-}
-.logo {
-    position: absolute;
-    left: 0;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
+
 .about-text {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
     line-height: 1.6;
 }
-
 .about-text p {
     margin-bottom: 1.5em;
-}
-.logo a {
-    text-decoration: none;  
-    color: #333;           
-}
-.hero-logo {
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-.hero-logo img {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin-left: 0;
-}
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2rem;
-  gap: 2rem;
-}
-
-.hero-logo {
-  max-width: 300px;
-  height: auto;
-}
-
-.hero-text {
-  max-width: 600px;
 }
