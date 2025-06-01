@@ -41,25 +41,14 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
     gap: 2rem;
 }
 
 .hero-logo {
     margin-left: 0;
-    text-align: left;
-    max-width: none;
-    width: auto;
-    height: auto;
+    padding-left: 0;
 }
-
-.hero-logo img {
-    height: 80px;  /* 세로 높이만 고정 */
-    width: auto;
-    display: block;
-    margin-left: 0;
-}
-
 .hero-text {
     max-width: 600px;
 }
@@ -123,4 +112,10 @@ footer {
 
 .about-text p {
     margin-bottom: 1.5em;
+}
+.hero-logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-left: 0;
 }
