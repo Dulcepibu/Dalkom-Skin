@@ -18,6 +18,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin: 0;
 }
 
 nav a {
@@ -28,37 +29,43 @@ nav a {
 
 .hero {
     position: relative;
-    height: 400px;
+    padding: 2rem 0;
     background-image: url("flowerstwo.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    color: white;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-logo {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 1rem;
+    left: 1rem;
 }
 
 .hero-logo img {
     height: 170px;
     width: 400px;
-    display: block;
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    margin-top: 6rem;
+    padding: 1rem;
 }
 
 .hero-text h2,
 .hero-text p {
-    margin: 0.5em 0;
-    color: #333;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0.5rem 0;
 }
 
 .products {
@@ -99,9 +106,25 @@ footer {
     position: relative;
 }
 
+.logo {
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+}
+
 .about-text {
-    max-width: 800px;
-    margin: 2rem auto;
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
     line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 1.5em;
 }
