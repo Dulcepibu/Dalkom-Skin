@@ -32,28 +32,39 @@ nav a {
 }
 
 .hero {
-    padding: 2rem 0; /* 좌우 패딩 제거 */
-    background-color: #ffe4e1;
+    background-image: url('rug.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    color: #fff;
 }
 
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 0;
     gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-left: 0;
 }
 
 .hero-logo {
     margin-left: 0;
     padding-left: 0;
+    flex-shrink: 0;
 }
 
 .hero-logo img {
-    height: 170px; /* 로고 세로 높이 조절 */
-    width: 400px; 
+    height: 170px;
+    width: 400px;
     display: block;
-    margin-left: 0; /* 왼쪽 끝에 딱 붙임 */
+    margin-left: 0;
 }
 
 .hero-text {
