@@ -32,34 +32,35 @@ nav a {
 }
 
 .hero {
+    position: relative;
+    padding: 2rem 0;
     background-image: url("flowerstwo.jpg");
     background-size: cover;
     background-position: center;
-    position: relative;
-    min-height: 400px;
-    padding-top: 1rem;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 2rem;
-    border-radius: 12px;
-    margin-left: 0;
+    background-repeat: no-repeat;
 }
 
 .hero-logo {
     position: absolute;
-    top: 1rem;
+    top: 0;
     left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-logo img {
     height: 170px;
     width: 400px;
     display: block;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    gap: 2rem;
+    /* padding-top 여유 필요하면 조절 가능 */
 }
 
 .hero-text {
