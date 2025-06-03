@@ -32,16 +32,12 @@ nav a {
 }
 
 .hero {
-    background-image: url('flowerstwo.jpg');
+    background-image: url("flowerstwo.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 0;
-    color: #fff;
+    position: relative;
+    min-height: 400px;
+    padding-top: 1rem;
 }
 
 .hero-content {
@@ -55,16 +51,15 @@ nav a {
 }
 
 .hero-logo {
-    margin-left: 0;
-    padding-left: 0;
-    flex-shrink: 0;
+    position: absolute;
+    top: 1rem;
+    left: 0;
 }
 
 .hero-logo img {
     height: 170px;
     width: 400px;
     display: block;
-    margin-left: 0;
 }
 
 .hero-text {
