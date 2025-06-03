@@ -12,11 +12,6 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -33,7 +28,7 @@ nav a {
 
 .hero {
     position: relative;
-    padding: 2rem 0;
+    height: 400px;
     background-image: url("flowerstwo.jpg");
     background-size: cover;
     background-position: center;
@@ -42,10 +37,8 @@ nav a {
 
 .hero-logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
+    top: 20px;
+    left: 20px;
 }
 
 .hero-logo img {
@@ -55,16 +48,17 @@ nav a {
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 0;
-    gap: 2rem;
-    /* padding-top 여유 필요하면 조절 가능 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.hero-text {
-    max-width: 600px;
+.hero-text h2,
+.hero-text p {
+    margin: 0.5em 0;
+    color: #333;
 }
 
 .products {
@@ -105,25 +99,9 @@ footer {
     position: relative;
 }
 
-.logo {
-    position: absolute;
-    left: 0;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #333;
-}
-
 .about-text {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 2rem auto;
     text-align: center;
     line-height: 1.6;
-}
-
-.about-text p {
-    margin-bottom: 1.5em;
 }
