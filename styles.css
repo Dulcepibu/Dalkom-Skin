@@ -94,9 +94,9 @@ nav a {
 
 .product-card img {
     width: 100%;
-    height: auto;
+    height: 250px;          /* 고정된 높이로 통일 */
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: cover;      /* 비율 유지하면서 잘 맞게 자름 */
 }
 
 .product-card h4 {
