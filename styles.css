@@ -74,11 +74,11 @@ nav a {
 }
 
 .product-grid {
-  display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2열 그리드 */
-    gap: 2rem; /* 카드 사이 간격 */
-    max-width: 900px; /* 전체 너비 제한 */
-    margin: 0 auto; /* 가운데 정렬 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2열 배치 */
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .product-card {
