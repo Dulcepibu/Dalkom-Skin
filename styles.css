@@ -79,7 +79,7 @@ nav a {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    align-items: start; /* 카드 간 높이 문제 해결 */
+    align-items: start; /* 카드 정렬 위로 */
 }
 
 .product-card {
@@ -102,9 +102,7 @@ nav a {
 .product-card h4 {
     font-size: 1rem;
     margin: 0.5rem 0 0.3rem 0;
-    white-space: nowrap;          /* 줄바꿈 방지 */
-    overflow: hidden;             /* 넘치는 텍스트 숨김 */
-    text-overflow: ellipsis;      /* ...으로 처리 */
+    min-height: 2.5em; /* 모든 제목 높이 동일하게 맞춤 */
 }
 
 footer {
