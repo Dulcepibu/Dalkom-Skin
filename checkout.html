@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finalizar Compra - Dalkom Skin</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    form {
+      max-width: 500px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 12px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Finalizar Compra</h2>
+  <form id="checkout-form">
+    <label>Producto:</label>
+    <input type="text" id="product-name" name="producto" readonly />
+
+    <label>Precio:</label>
+    <input type="text" id="product-price" name="precio" readonly />
+
+    <label>Nombre completo:</label>
+    <input type="text" name="nombre" required />
+
+    <label>Dirección de entrega:</label>
+    <textarea name="direccion" required></textarea>
+
+    <label>Teléfono:</label>
+    <input type="tel" name="telefono" required />
+
+    <label>Método de pago:</label>
+    <select name="metodo_pago" required>
+      <option value="">Selecciona</option>
+      <option value="nequi">Nequi</option>
+      <option value="daviplata">Daviplata</option>
+      <option value="transferencia">Transferencia Bancaria</option>
+      <option value="contraentrega">Contra entrega</option>
+    </select>
+
+    <button type="submit">Confirmar Pedido</button>
+  </form>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('producto');
+    const price = params.get('precio');
+
+    if (name && price) {
+      document.getElementById('product-name').value = decodeURIComponent(name);
+      document.getElementById('product-price').value = price + ' COP';
+    }
+
+    document.getElementById('checkout-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("¡Tu pedido ha sido recibido! Te contactaremos pronto para confirmar.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
