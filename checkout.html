@@ -13,22 +13,26 @@
       <h2>Finaliza tu compra</h2>
       <form id="checkout-form">
         <label>Nombre completo</label>
-        <input type="text" required />
+        <input type="text" name="nombre_completo" required />
         
         <label>Email</label>
-        <input type="email" required />
+        <input type="email" name="email" required />
 
         <label>Teléfono</label>
-        <input type="tel" required />
+        <input type="tel" name="telefono" required />
 
         <label>Dirección</label>
-        <input type="text" required />
+        <input type="text" name="direccion" required />
 
         <label>Ciudad</label>
-        <input type="text" required />
+        <input type="text" name="ciudad" required />
 
         <label>Comentarios (opcional)</label>
-        <textarea rows="3"></textarea>
+        <textarea name="comentarios" rows="3"></textarea>
+
+        <!-- Campos ocultos para producto y precio -->
+        <input type="hidden" name="producto" id="hidden-producto" />
+        <input type="hidden" name="precio" id="hidden-precio" />
 
         <button type="submit">Confirmar pedido</button>
       </form>
@@ -38,7 +42,7 @@
       <div class="summary-box">
         <h3>Resumen del pedido</h3>
         <p id="product-name">Nombre del producto</p>
-        <p id="product-price">$0</p>
+        <p id="product-price">$0 COP</p>
       </div>
     </div>
   </div>
@@ -52,6 +56,10 @@
     if (nombre && precio) {
       document.getElementById('product-name').textContent = nombre;
       document.getElementById('product-price').textContent = `$${precio} COP`;
+
+      // Setear los valores en los campos ocultos para enviar en el formulario
+      document.getElementById('hidden-producto').value = nombre;
+      document.getElementById('hidden-precio').value = precio;
     }
   </script>
 </body>
